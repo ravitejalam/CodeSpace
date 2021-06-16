@@ -2,10 +2,8 @@
 
 using namespace std;
 
-vector<int> flowerStick(vector<int> flowerStick, int random)
+int main()
 {
-    sort(flowerStick.begin(), flowerStick.begin() + random);
-    sort(flowerStick.begin() + random, flowerStick.end());
-    reverse(flowerStick.begin() + random, flowerStick.end());
-    return flowerStick;
+    
+    return 0;
 }
