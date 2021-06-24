@@ -21,8 +21,6 @@ void MinStack::push(int x) {
             st.push(x);
         }
     }
-    // cout << "pushed" << endl;
-
 }
 
 void MinStack::pop() {
