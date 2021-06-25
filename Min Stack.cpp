@@ -1,5 +1,5 @@
 stack<long long int> st;
-int mini;
+long long int mini;
 
 MinStack::MinStack() {
     while(!st.empty())
@@ -7,7 +7,7 @@ MinStack::MinStack() {
     mini = INT_MAX;
 }
 
-void MinStack::push(int x) {
+void MinStack::push(long long int x) {
     if(st.empty()){
         mini = x;
         st.push(x);
@@ -25,7 +25,7 @@ void MinStack::push(int x) {
 
 void MinStack::pop() {
     if(!st.empty()){
-        int x = st.top();
+        long long int x = st.top();
         if(x<mini){
             mini = 2*mini-x;
         }
