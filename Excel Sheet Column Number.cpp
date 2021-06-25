@@ -2,11 +2,12 @@
 
 using namespace std;
 
-int titleToNumber(string A) {
-    int ans=0;
+int titleToNumber(string A)
+{
+    int ans = 0;
     for (int i = 0; i < A.size(); i++)
     {
-        ans = ans*26 + A[i]-'A'+1;
+        ans = ans * 26 - 'A' + A[i] + 1;
     }
     return ans;
 }

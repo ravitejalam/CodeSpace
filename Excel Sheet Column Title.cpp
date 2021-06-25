@@ -10,7 +10,7 @@ string convertToTitle(int A) {
         ans+=((A)%26+'A');
         A/=26;
     }
-    ans,reverse(ans.begin(),ans.end());
+    reverse(ans.begin(),ans.end());
     return ans;
 }
 
