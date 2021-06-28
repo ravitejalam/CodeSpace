@@ -8,15 +8,12 @@
  * };
  */
 
-TreeNode* invert(TreeNode* root){
-    if(root==NULL)
+TreeNode *invertTree(TreeNode *root)
+{
+    if (root == NULL)
         return NULL;
-    TreeNode* tmp = root->left;
-    root->left = invert(root->right);
-    root->right = invert(tmp);
+    TreeNode *tmp = root->left;
+    root->left = invertTree(root->right);
+    root->right = invertTree(tmp);
     return root;
-}
-
-TreeNode* Solution::invertTree(TreeNode* A) {
-    return invert(A);
 }
