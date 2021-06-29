@@ -1,4 +1,8 @@
-int Solution::lengthOfLongestSubstring(string A)
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int lengthOfLongestSubstring(string A)
 {
     unordered_set<char> s;
     int left = 0;
