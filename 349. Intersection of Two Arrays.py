@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         distinct_nums1 = set(nums1)
