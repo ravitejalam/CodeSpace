@@ -7,3 +7,4 @@
 !README.md
 !.gitignore
 !cmake-build-debug
+/test.py
